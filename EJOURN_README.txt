@@ -1,3 +1,4 @@
-This a project on Electronic Journal Publishing WEBSITE. The project is built using C#.NET and SQL-SERVER 2008. For more details you may see the file
+This a project on Electronic Journal Publishing WEBSITE. The project is built using C#.NET and SQL-SERVER 2008. 
+For more details you may see the file
 
 https://docs.google.com/document/pub?id=11lLLCCJdz4AuLvMTu8ZAMN_OfeMdL7OyGgD1KuVoDCw
