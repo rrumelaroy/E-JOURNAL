@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin_Master.master.cs" Inherits="Admin_Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="pro_dropdown_3/pro_dropdown_3.css" />
+    <script src="pro_dropdown_3/stuHover.js" type="text/javascript"></script>
+    <style type="text/css">
+    .adminbanner
+        {
+        background-image:url('/E-JOURNAL/img_files/admin.jpg');
+        width:970px;
+        height:150px;
+        }
+    </style>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body style="background-image:url('/E-JOURNAL/img_files/admin_back.JPG');">
+    <form id="form1" runat="server">
+    <center>
+    <table border="0" cellpadding="0px" cellspacing="0px">
+    <tr><td>
+    <div id="div1" runat="server" class="adminbanner"></div>
+    <div style="width:970px;">
+    <span class="preload1"></span>
+    <span class="preload2"></span>
+    <ul id="nav">
+	<li class="top"><a href="admin_home.aspx" class="top_link"><span>Home</span></a></li>
+	<li class="top"><a href="#nogo2" id="products" class="top_link"><span class="down">Account Settings</span></a>
+		<ul class="sub">
+            <li><b>Make New Account</b></li>
+            <li><a href="admin_newpaid.aspx">Paid Subscriber</a></li>
+			<li><a href="admin_newauthor.aspx">Author</a></li>
+			<li><a href="admin_addreviewer.aspx">Reviewer</a></li>
+            <li><b>&nbsp;</b></li>
+            <li><a href="admin_renewsub.aspx">Renew Subscription</a></li>
+            <li><b>Disable Account</b></li>
+            <li><a href="admin_disable_freesub.aspx">Free Subscriber</a></li>
+            <li><a href="admin_disable_paidsub.aspx">Paid Subscriber</a></li>
+			<li><a href="admin_disable_author.aspx">Author</a></li>
+			<li><a href="admin_disable_reviewer.aspx">Reviewer</a></li>
+        </ul>
+	</li>
+	<li class="top"><a href="#nogo22" id="services" class="top_link"><span class="down">Manage Journals</span></a>
+		<ul class="sub">
+            <li><b>Review Journals</b></li>
+			<li><a href="admin_sendtoreview1.aspx">New Journals</a></li>
+			<li><a href="admin_sendtoreview2.aspx">Corrected Journals</a></li>
+            <li><b>Process Reviewed Journals</b></li>
+			<li><a href="admin_processreviewed1.aspx">1 Time Reviewed</a></li>
+			<li><a href="admin_processreviewed2.aspx">Many Times Reviewed</a></li>
+            <li><b>&nbsp;</b></li>
+            <li><a href="#nogo4">Manage Rejected</a></li>
+            <li><a href="pendingpaper_mgr.aspx">Publish Journals</a></li>
+            <li><b>&nbsp;</b></li>
+			<li><a href="editorial_mgr.aspx">Editorial Management</a></li>
+		</ul>
+	</li>
+	<li class="top"><a href="#nogo27" id="contacts" class="top_link"><span class="down">Schemes & Subject Area</span></a>
+		<ul class="sub">
+            <li><b>Manage Schemes</b></li>
+            <li><a href="admin_addscheme.aspx">Add New</a></li>
+            <li><a href="admin_modscheme.aspx">Modify</a></li>
+            <li><a href="admin_delscheme.aspx">Delete</a></li>
+            <li><b>Manage Subject Area</b></li>
+            <li><a href="admin_addsubject.aspx">Add New</a></li>
+            <li><a href="admin_modsubject.aspx">Modify</a></li>
+            <li><a href="admin_delsubject.aspx">Delete</a></li>
+		</ul>
+	</li>
+    <li class="top"><a href="admin_viewfeedback.aspx" id="A1" class="top_link"><span>Process Feedback</span></a></li>
+    <li class="top"><a href="#nogo57" id="A2" class="top_link"><span class="down">Reports</span></a>
+        <ul class="sub">
+            <li><b>Viewers' Progress Graph</b></li>
+            <li><a href="admin_viewprogressgraph.aspx">Paid Subscriber</a></li>
+            <li><b>&nbsp;</b></li>
+            <li><a href="admin_addsubject.aspx">Reviewer's Work Report</a></li>
+		</ul>
+    </li>
+    <li class="top"><a href="#nogo57" id="A3" class="top_link"><span class="down">Admin Account</span></a>
+        <ul class="sub">
+            <li><a href="admin_setpass.aspx">Change Password</a></li>
+            <li><a href="djm_home.aspx">Log Out</a></li>
+		</ul>
+    </li>
+</ul>
+<div>
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+</asp:ContentPlaceHolder></div>
+</div>
+</td>
+<td style="background-color:Black; width:3px;"></td>
+</tr>
+</table>
+</center>
+       
+    </form>
+</body>
+</html>
